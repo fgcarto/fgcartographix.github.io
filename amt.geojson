@@ -9,13 +9,13 @@
 
     "features": [{
         "type": "Feature",
-        
-        "stroke": "#002878",
-        "stroke-width": 2,
-        "stroke-opacity": 1,
-        "fill": "#002878",
-        "fill-opacity": 0.3 "properties": {
-            "Nom": "Territoire AMT"
+        "properties": {
+            "Nom": "Territoire AMT",
+            "stroke": "#002878",
+	    "stroke-width": 2,
+	    "stroke-opacity": 1,
+	    "fill": "#002878",
+            "fill-opacity": 0.3
         },
         "geometry": {
             "type": "MultiPolygon",
