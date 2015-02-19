@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>CARTIS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CARTIS">
+    <meta name="author" content="Francois Goulet (ISAM)">
+
+    <!-- Le styles -->
+    <link href="./css/Bootstrap-2.3.2/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/Leaflet-0.7.1/leaflet.css" />
+
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+        /*background: url('./img/SpoonGraphics-Topographic-Map-4.png');
+        background-size: 500px 500px*/
+      }
+
+      .dropdown-menu {
+          max-height: 600px;
+          overflow-y: auto;
+          overflow-x: hidden;
+      }
+
+    </style>
+    <link href="./css/Bootstrap-2.3.2/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="./assets/js/html5shiv.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.3.0/respond.js"></script>
+    <![endif]-->
+
+</head>
+
+  <body onload='init();'>
+
+
+
+    <div class="navbar navbar-inverse navbar-fixed-top hidden-print">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="index.html">If only I had time to...</a>
+          <div class="nav-collapse collapse">
+ 
+                        
+                         
+
+            <!--
+            <ul class="nav pull-right">
+              <a class="brand"><img class="logo" src="./img/AMT_logo_visibiliteBlanc_mod_ISAM.png" padding-top:2 width=100px alt="Logo AMT"></a>
+            </ul>
+            -->
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <!-- Main hero unit for a primary marketing message or call to action -->
+		<div class="hero-unit">
+			<h2>My To Do / Wish List</h2>
+			<p>All the things I'd like to try...</p>
+		</div>
+
+      <!-- Example row of columns -->
+        <div>
+			<h4>Carte</h4>
+            <iframe width='100%' height='500px' frameBorder='2' src='./leaflet.html'></iframe>
+        </div>
+
+		
+		
+		<div>
+			<h3>TURF.JS</h3>
+		</div>
+
+		<div>
+			<h4>Introduction to Turf.js</h4>
+			<a href="https://www.mapbox.com/guides/intro-to-turf/" target="_blank"><iframe width='100%' height='300px' frameBorder='1' src="https://www.mapbox.com/guides/intro-to-turf/"></iframe></a>
+		</div>
+		 
+		 <div>
+			<h4>Analysis with Turf.js</h4>
+			<a href="https://www.mapbox.com/guides/analysis-with-turf/" target="_blank"><iframe width='100%' height='300px' frameBorder='1' src="https://www.mapbox.com/guides/analysis-with-turf/"></iframe></a>
+		</div>
+		 
+		<div>
+			<h4>Turf Exercice</h4>
+			<a href="http://lyzidiamond.com/turf-exercise/" target="_blank"><iframe width='100%' height='300px' frameBorder='1' src="http://lyzidiamond.com/turf-exercise/"></iframe></a>
+		</div>
+		 
+		 <div>
+			<h4>Turf for local gov: potholes and parking meters Turf for local gov: potholes and parking meters</h4>
+			<a href="https://www.mapbox.com/blog/turf-government-data/" target="_blank"><iframe width='100%' height='300px' frameBorder='1' src="https://www.mapbox.com/blog/turf-government-data/"></iframe></a>
+		</div>
+		 
+		<div>
+			<h4>Keep on truckin' with Turf.js and Mapbox Directions</h4>
+			<a href="https://www.mapbox.com/blog/turf-electric/" target="_blank"><iframe width='100%' height='300px' frameBorder='1' src="https://www.mapbox.com/blog/turf-electric/"></iframe></a>
+		</div>
+		  
+		<div>
+			<h4>Geoprocessing on the Client Side with Turf.js</h4>
+			<a href="https://paulcrickard.wordpress.com/2015/01/07/geoprocessing-on-the-client-side-with-turf-js/" target="_blank"><iframe width='100%' height='300px' frameBorder='1' src="https://paulcrickard.wordpress.com/2015/01/07/geoprocessing-on-the-client-side-with-turf-js/"></iframe></a>
+		</div>
+		 
+		<div>
+			<h4>Live Scenario Planning with Leaflet.js with Turf.js</h4>
+			<a href="https://paulcrickard.wordpress.com/2015/01/22/live-scenario-planning-in-leaflet-js-with-turf-js/" target="_blank"><iframe width='100%' height='300px' frameBorder='1' src="https://paulcrickard.wordpress.com/2015/01/22/live-scenario-planning-in-leaflet-js-with-turf-js/"></iframe></a>
+		</div>
+		 
+		 
+		 
+		<div>
+			<h3>Mapbox Stack</h3>
+		</div>
+
+		<div>
+			<h4>How Javascript and mapping works</h4>
+			<a href="https://www.mapbox.com/guides/javascript-and-mapboxjs-fundamentals/" target="_blank"><iframe width='100%' height='300px' frameBorder='1' src="https://www.mapbox.com/guides/javascript-and-mapboxjs-fundamentals/"></iframe></a>
+		</div>
+
+		<div> 
+			<h4>Building a store locator</h4>
+			<a href="https://www.mapbox.com/guides/building-a-store-locator/" target="_blank"><iframe width='100%' height='300px' frameBorder='1' src="https://www.mapbox.com/guides/building-a-store-locator/"></iframe></a>
+		</div>
+		 
+		<div>
+			<h4>Mapbox transportation</h4>
+			<a href="https://www.mapbox.com/industries/transportation/" target="_blank"><iframe width='100%' height='300px' frameBorder='1' src="https://www.mapbox.com/industries/transportation/"></iframe></a>
+		</div>
+		 
+		 <div>
+			<h4>Mapbox JS Getting Started</h4>
+			<a href="https://www.mapbox.com/guides/javascript-and-mapboxjs-fundamentals/" target="_blank"><iframe width='100%' height='300px' frameBorder='1' src="https://www.mapbox.com/guides/javascript-and-mapboxjs-fundamentals/"></iframe></a>
+		</div>
+		 
+		<div>
+			<h4>Mapbox Guides</h4>
+			<a href="https://www.mapbox.com/guides/" target="_blank"><iframe width='100%' height='300px' frameBorder='1' src="https://www.mapbox.com/guides/"></iframe></a>
+		</div>
+		 
+		 <div>
+			<h4>Massive data in Mapbox Studio with PostGIS + SQL</h4>
+			<a href="https://www.mapbox.com/blog/postgis-sql-studio/" target="_blank"><iframe width='100%' height='300px' frameBorder='1' src="https://www.mapbox.com/blog/postgis-sql-studio/"></iframe></a>
+		</div>
+		 
+		<div>
+			<h4>Build anything with Mapbox.js, a library for fast & interactive maps</h4>
+			<a href="https://www.mapbox.com/mapbox.js/api/v2.1.5/" target="_blank"><iframe width='100%' height='300px' frameBorder='1' src="https://www.mapbox.com/mapbox.js/api/v2.1.5/"></iframe></a>
+		</div>
+		 
+		 <div>
+			<h4>Georeferencing Imagery</h4>
+			<a href="https://www.mapbox.com/guides/georeferencing-imagery/" target="_blank"><iframe width='100%' height='300px' frameBorder='1' src="https://www.mapbox.com/guides/georeferencing-imagery/"></iframe></a>
+		</div>
+		 
+		<div>
+			<h4>ArcGIS to Mapbox</h4>
+			<a href="https://www.mapbox.com/guides/arc-to-mapbox/" target="_blank"><iframe width='100%' height='300px' frameBorder='1' src="https://www.mapbox.com/guides/arc-to-mapbox/"></iframe></a>
+		</div>
+		 
+		 
+		 
+		<div>
+			<h3>Paul Crickard Tutorials</h3>
+		</div>
+
+		<div>
+			<h4>Handling Dates in Open Data with Javascript and Python</h4>
+			<a href="https://paulcrickard.wordpress.com/2015/01/13/handling-dates-in-open-data-with-javascript-and-python/" target="_blank"><iframe width='100%' height='300px' frameBorder='1' src="https://paulcrickard.wordpress.com/2015/01/13/handling-dates-in-open-data-with-javascript-and-python/"></iframe></a>
+		</div> 
+
+		 <div>
+			<h4>JavaScript Classes and Events</h4>
+			<a href="https://paulcrickard.wordpress.com/2015/01/23/javascript-classes-and-events/" target="_blank"><iframe width='100%' height='300px' frameBorder='1' src="https://paulcrickard.wordpress.com/2015/01/23/javascript-classes-and-events/"></iframe></a>
+		</div>
+		 
+		<div>
+			<h4>Realtime Bus Map Using OpenLayers and KML</h4>
+			<a href="https://paulcrickard.wordpress.com/2013/01/12/realtime-bus-map-using-openlayers-and-kml/" target="_blank"><iframe width='100%' height='300px' frameBorder='1' src="https://paulcrickard.wordpress.com/2013/01/12/realtime-bus-map-using-openlayers-and-kml/"></iframe></a>
+		</div>
+		 
+		 <div>
+			<h4>Albuquerque Live Bus Tracker</h4>
+			<a href="https://paulcrickard.wordpress.com/2015/01/26/albuquerque-live-bus-tracker/" target="_blank"><iframe width='100%' height='300px' frameBorder='1' src="https://paulcrickard.wordpress.com/2015/01/26/albuquerque-live-bus-tracker/"></iframe></a>
+		</div>
+		 
+		<div>
+			<h4>Albuquerque Live Bus Data as JSON</h4>
+			<a href="https://paulcrickard.wordpress.com/2015/01/27/albuquerque-live-bus-data-as-json/" target="_blank"><iframe width='100%' height='300px' frameBorder='1' src="https://paulcrickard.wordpress.com/2015/01/27/albuquerque-live-bus-data-as-json/"></iframe></a>
+		</div>
+		 
+		 <div>
+			<h4>CSV in JavaScript Using Albuquerque Open Data</h4>
+			<a href="https://paulcrickard.wordpress.com/2015/01/28/csv-in-javascript-using-albuquerque-open-data/" target="_blank"><iframe width='100%' height='300px' frameBorder='1' src="https://paulcrickard.wordpress.com/2015/01/28/csv-in-javascript-using-albuquerque-open-data/"></iframe></a>
+		</div>
+		 
+		<div>
+			<h4>Leaflet.js and GeoJSON</h4>
+			<a href="https://paulcrickard.wordpress.com/2012/04/12/leaflet-js-and-geojson/" target="_blank"><iframe width='100%' height='300px' frameBorder='1' src="https://paulcrickard.wordpress.com/2012/04/12/leaflet-js-and-geojson/"></iframe></a>
+		</div>
+		 
+		 <div>
+			<h4>Query Multiple WMS Layers in Leaflet.js</h4>
+			<a href="https://paulcrickard.wordpress.com/2012/04/16/query-multiple-wms-layers-in-leaflet-js/" target="_blank"><iframe width='100%' height='300px' frameBorder='1' src="https://paulcrickard.wordpress.com/2012/04/16/query-multiple-wms-layers-in-leaflet-js/"></iframe></a>
+		</div>
+		 
+		<div>
+			<h4>Leaflet.js Interactivity</h4>
+			<a href="https://paulcrickard.wordpress.com/2012/06/19/leaflet-js-interactivity/" target="_blank"><iframe width='100%' height='300px' frameBorder='1' src="https://paulcrickard.wordpress.com/2012/06/19/leaflet-js-interactivity/"></iframe></a>
+		</div>
+		 
+		 <div>
+			<h4>Leaflet.js Interactivity II: Allow Users to Add Points</h4>
+			<a href="https://paulcrickard.wordpress.com/2012/06/29/leaflet-js-interactivity-ii-allow-users-to-add-points/" target="_blank"><iframe width='100%' height='300px' frameBorder='1' src="https://paulcrickard.wordpress.com/2012/06/29/leaflet-js-interactivity-ii-allow-users-to-add-points/"></iframe></a>
+		</div>
+		 
+		<div>
+			<h4>Lealfet.js with Floating DIVs and onclick()</h4>
+			<a href="https://paulcrickard.wordpress.com/2012/12/10/leaflet-js-with-floating-divs-and-onclick/" target="_blank"><iframe width='100%' height='300px' frameBorder='1' src="https://paulcrickard.wordpress.com/2012/12/10/leaflet-js-with-floating-divs-and-onclick/"></iframe></a>
+		</div>
+		 
+		 <div>
+			<h4>Albuquerque Registered Historic Places as GeoJSON in Leaflet</h4>
+			<a href="https://paulcrickard.wordpress.com/2012/12/13/albuquerque-registered-historic-places-as-geojson-in-leaflet/" target="_blank"><iframe width='100%' height='300px' frameBorder='1' src="https://paulcrickard.wordpress.com/2012/12/13/albuquerque-registered-historic-places-as-geojson-in-leaflet/"></iframe></a>
+		</div>
+		 
+		<div>
+			<h4>Leaflet.js Map in C#</h4>
+			<a href="https://paulcrickard.wordpress.com/2013/04/09/leaflet-js-map-in-c/" target="_blank"><iframe width='100%' height='300px' frameBorder='1' src="https://paulcrickard.wordpress.com/2013/04/09/leaflet-js-map-in-c/"></iframe></a>
+		</div>
+		 
+		 <div>
+			<h4>Leaflet.js, Node.js and Socket.io</h4>
+			<a href="https://paulcrickard.wordpress.com/2014/09/03/leaflet-js-node-js-and-socket-io/" target="_blank"><iframe width='100%' height='300px' frameBorder='1' src="https://paulcrickard.wordpress.com/2014/09/03/leaflet-js-node-js-and-socket-io/"></iframe></a>
+		</div>
+		 
+		<div>
+			<h4>ESRI Attachments with ArcServer and Javascript</h4>
+			<a href="https://paulcrickard.wordpress.com/2014/12/10/esri-attachments-with-arcserver-and-javascript/" target="_blank"><iframe width='100%' height='300px' frameBorder='1' src="https://paulcrickard.wordpress.com/2014/12/10/esri-attachments-with-arcserver-and-javascript/"></iframe></a>
+		</div>
+		 
+		 <div>
+			<h4>Geocoding with Albuquerque Open Data</h4>
+			<a href="https://paulcrickard.wordpress.com/2015/01/16/geocoding-with-albuquerque-open-data/" target="_blank"><iframe width='100%' height='300px' frameBorder='1' src="https://paulcrickard.wordpress.com/2015/01/16/geocoding-with-albuquerque-open-data/"></iframe></a>
+		</div>
+		 
+		<div>
+			<h4>ESRI Geocoding Widget Using the REST API and JavaScrip</h4>
+			<a href="https://paulcrickard.wordpress.com/2014/10/20/esri-geocoding-widget-using-the-rest-api-and-javascript/" target="_blank"><iframe width='100%' height='300px' frameBorder='1' src="https://paulcrickard.wordpress.com/2014/10/20/esri-geocoding-widget-using-the-rest-api-and-javascript/"></iframe></a>
+		</div>
+		 
+
+		 
+		<div>
+			<h3>LEAFLET</h3>
+		</div>
+
+		<div>
+			<h4>Leaflet Vector Layers</h4>
+			<a href="http://jasonsanford.github.io/leaflet-vector-layers/" target="_blank"><iframe width='100%' height='300px' frameBorder='1' src="http://jasonsanford.github.io/leaflet-vector-layers/"></iframe></a>
+		</div>
+		 
+		<div>
+			<h4>Custom Leaflet Control</h4>
+			<a href="http://odoe.net/blog/custom-leaflet-control/" target="_blank"><iframe width='100%' height='300px' frameBorder='1' src="http://odoe.net/blog/custom-leaflet-control/"></iframe></a>
+		</div>
+
+		
+		
+		<div>
+			<h3>NODE.JS</h3>
+		</div>
+
+		<div>
+			<h4>An OL3 map with Node.js and PostGIS</h4>
+			<a href="http://denelius.com/ol3-node-postgis/" target="_blank"><iframe width='100%' height='300px' frameBorder='1' src="http://denelius.com/ol3-node-postgis/"></iframe></a>
+		</div>
+		 
+		 
+		 
+		<div>
+			<h3>D3</h3>
+		</div>
+
+		<div>
+			<h4>Mapping with D3.js</h4>
+			<a href="http://maptimesea.github.io/2015/01/07/d3-mapping.html" target="_blank"><iframe width='100%' height='300px' frameBorder='1' src="http://maptimesea.github.io/2015/01/07/d3-mapping.html"></iframe></a>
+		</div>
+		 
+		 
+		 		 
+		<div>
+			<h3>OpenGeo Suite</h3>
+		</div>
+
+		<div>
+			<h4>Building an Autocomplete Parcel Lookup</h4>
+			<a href="http://workshops.boundlessgeo.com/tutorial-autocomplete/" target="_blank"><iframe width='100%' height='300px' frameBorder='1' src="http://workshops.boundlessgeo.com/tutorial-autocomplete/"></iframe></a>
+		</div> 
+
+		<div>
+			<h3>Python</h3>
+		</div>
+
+		<div>
+			<h4>How to load a QGIS project in python</h4>
+			<a href="http://kartoza.com/how-to-load-a-qgis-project-in-python/" target="_blank"><iframe width='100%' height='300px' frameBorder='1' src="http://kartoza.com/how-to-load-a-qgis-project-in-python/"></iframe></a>
+		</div>
+ 
+ 
+      <hr>
+
+      <footer>
+        <p>C'est une utopie, mais bon... j'ai le droit de rêver!<br>
+        &copy; Moi, 2015.</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+	
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./js/jquery-1.7.2.min.js"></script>
+    <script src="./js/Bootstrap-2.3.2/bootstrap.min.js"></script>
+
+  </body>
+</html>
