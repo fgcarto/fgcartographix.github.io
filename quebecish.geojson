@@ -1,12 +1,4 @@
-var QcStyle = {
-    "color": "#000000",
-    "weight": 4,
-    "fillOpacity": 0.00,
-    "opacity": 1,
-    clickable: false
-};
-
-var quebec = {
+{
 "type": "FeatureCollection",
                                                                           
 "features": [

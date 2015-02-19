@@ -1,12 +1,4 @@
-var terrAMTStyle = {
-    "color": "#5f85c0",
-    "weight": 4,
-    "fillOpacity": 0.00,
-    "opacity": 1,
-    "clickable": false
-};
-
-var amt_2012 = {
+{
 "type": "FeatureCollection",
                                                                                 
 "features": [

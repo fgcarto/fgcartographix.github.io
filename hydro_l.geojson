@@ -1,11 +1,4 @@
-var hydrolStyle = {
-    "color": "#98c9d7",
-    "weight": 3,
-    "fillOpacity": 1.0,
-    "opacity": 1.0
-};
-
-var hydro_l = {
+{
 "type": "FeatureCollection",
                                                                                 
 "features": [
