@@ -10,7 +10,16 @@
     "features": [{
         "type": "Feature",
         "properties": {
+<<<<<<< HEAD
             "Nom": "Territoire AMT"
+=======
+            "Nom": "Territoire AMT",
+            "stroke": "#002878",
+	    "stroke-width": 2,
+	    "stroke-opacity": 1,
+	    "fill": "#002878",
+            "fill-opacity": 0.1
+>>>>>>> origin/master
         },
         "geometry": {
             "type": "MultiPolygon",
